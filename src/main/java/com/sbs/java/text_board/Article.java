@@ -10,4 +10,8 @@ public class Article {
     this.subject=subject;
     this.content=content;
   }
+  @Override
+  public String toString(){
+    return "{id :%d, subject:\"%s\",content:\"%s\"".formatted(this.id,this.subject,this.content);
+  }
 }
