@@ -2,14 +2,7 @@ package com.sbs.java.text_board;
 
 import com.sbs.java.text_board.base.Rq;
 import com.sbs.java.text_board.container.Container;
-import com.sbs.java.text_board.controller.ArticleController;
-import com.sbs.java.text_board.dto.Article;
-import com.sbs.java.text_board.util.Util;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.IntStream;
+import com.sbs.java.text_board.article.service.controller.ArticleController;
 
 public class App {
     private ArticleController articleController;

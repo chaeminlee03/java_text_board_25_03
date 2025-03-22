@@ -1,7 +1,7 @@
 package com.sbs.java.text_board.container;
 
-import com.sbs.java.text_board.controller.ArticleController;
-import com.sbs.java.text_board.service.ArticleService;
+import com.sbs.java.text_board.article.service.controller.ArticleController;
+import com.sbs.java.text_board.article.service.ArticleService;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package com.sbs.java.text_board.service;
+package com.sbs.java.text_board.article.service;
 
-import com.sbs.java.text_board.dto.Article;
+import com.sbs.java.text_board.article.service.dto.Article;
 
 import java.util.ArrayList;
 import java.util.List;

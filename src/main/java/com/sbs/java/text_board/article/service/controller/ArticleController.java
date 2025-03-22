@@ -1,15 +1,14 @@
-package com.sbs.java.text_board.controller;
+package com.sbs.java.text_board.article.service.controller;
 
 import com.sbs.java.text_board.base.Rq;
 import com.sbs.java.text_board.container.Container;
-import com.sbs.java.text_board.dto.Article;
-import com.sbs.java.text_board.service.ArticleService;
+import com.sbs.java.text_board.article.service.dto.Article;
+import com.sbs.java.text_board.article.service.ArticleService;
 import com.sbs.java.text_board.util.Util;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.IntStream;
 
 public class ArticleController {
   private ArticleService articleService;

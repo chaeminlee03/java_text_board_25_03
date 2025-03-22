@@ -1,4 +1,4 @@
-package com.sbs.java.text_board.dto;
+package com.sbs.java.text_board.article.service.dto;
 
 public class Article {
   public int id;
