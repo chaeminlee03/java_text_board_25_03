@@ -50,5 +50,8 @@ public class ArticleService {
     Article article = findById(id);
     articles.remove(article);
   }
+  public boolean isEmpty(){
+    return articles.isEmpty();
+  }
 }
 

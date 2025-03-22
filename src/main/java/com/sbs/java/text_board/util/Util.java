@@ -28,7 +28,6 @@ public class Util {
     for ( int i = list.size() - 1; i >= 0; i-- ) {
       reverse.add(list.get(i));
     }
-
     return reverse;
   }
 }

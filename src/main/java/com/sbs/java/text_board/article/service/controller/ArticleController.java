@@ -17,7 +17,7 @@ public class ArticleController {
   }
   public void showList(Rq rq) {
     List<Article> articles = articleService.findAll();
-    if (articles.isEmpty()) {
+    if (articleService.isEmpty()) {
       System.out.println("게시물이 존재하지 않습니다.");
       return;
     }
@@ -52,9 +52,7 @@ public class ArticleController {
     sortedArticles.forEach(article -> System.out.printf("%d | %s \n",article.id,article.subject));
   }
   public void showDetail(Rq rq) {
-    List<Article> articles = articleService.findAll();
-    // 리스트에 게시물이 비어 있는 경우
-    if (articles.isEmpty()) {
+    if (articleService.isEmpty()) {
       System.out.println("게시물이 존재하지 않습니다.");
       return;
     }
@@ -83,9 +81,7 @@ public class ArticleController {
     System.out.printf("내용 : %s\n", article.content);
   }
   public void doModify(Rq rq) {
-    List<Article> articles = articleService.findAll();
-    // 리스트에 게시물이 비어 있는 경우
-    if (articles.isEmpty()) {
+    if (articleService.isEmpty()) {
       System.out.println("게시물이 존재하지 않습니다.");
       return;
     }
@@ -129,13 +125,10 @@ public class ArticleController {
       }
       break;
     }
-    article.subject=subject;
-    article.content=content;
+    articleService.modify(id,subject,content);
   }
   public void doDelete(Rq rq) {
-    List<Article> articles = articleService.findAll();
-    // 리스트에 게시물이 비어 있는 경우
-    if (articles.isEmpty()) {
+    if (articleService.isEmpty()) {
       System.out.println("게시물이 존재하지 않습니다.");
       return;
     }
@@ -157,7 +150,7 @@ public class ArticleController {
       System.out.printf("%d번 게시물은 존재하지 않습니다.\n", id);
       return;
     }
-    articles.remove(article);
+    articleService.remove(id);
     System.out.printf("%d번 게시물이 삭제되었습니다.\n",id);
   }
   public void doWrite() {
