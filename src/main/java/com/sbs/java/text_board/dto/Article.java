@@ -1,10 +1,9 @@
-package com.sbs.java.text_board;
+package com.sbs.java.text_board.dto;
 
 public class Article {
-  int id;
-  String subject;
-  String content;
-
+  public int id;
+  public String subject;
+  public String content;
   public Article(int id, String subject, String content) {
     this.id=id;
     this.subject=subject;
